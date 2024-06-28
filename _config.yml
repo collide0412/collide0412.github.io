@@ -2,18 +2,18 @@
 markdown: kramdown
 
 # URL of the Site
-url: ''
-# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: 
+url: 'https://collide0412.github.io'
+# Base URL of the Site (leave blank since this is your user site)
+baseurl: ''
 
 # Title of the Site
-title: What A Theme
+title: Tran Quoc Dang's Portfolio
 # Description of the Site
-description: A customizable Jekyll portfolio theme
+description: A portfolio showcasing my education, work experience, projects, and skills
 # URL of Image of the Site
-site-image: /WhatATheme/assets/images/meta.jpg
+site-image: /assets/images/meta.jpg
 # Keywords of the Site
-site-keywords: Site, Template, Theme
+site-keywords: Portfolio, Tran Quoc Dang, Data Engineer, Projects
 # URL for the Image of custom Favicon
 favicon-url: 
 
@@ -22,32 +22,32 @@ heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
-email: thedevslot@gmail.com
-facebook_username: thedevslot
-twitter_username: thedevslot
-instagram_username: thedevslot
-linkedin_username: thedevslot
-github_username:  thedevslot
-youtube_channel_id: UCk_93NXYP-U_AOB5GfWlOow
-reddit_username: /
-behance_username: /
-dribbble_username: /
-spotify_username: /
+email: collide0412@gmail.com
+facebook_username: collide0412
+twitter_username: collide0412
+instagram_username: collide0412
+linkedin_username: collide0412
+github_username: collide0412
+youtube_channel_id: 
+reddit_username: 
+behance_username: 
+dribbble_username: 
+spotify_username: 
 
 # Google Analytics
-google-analytics: UA-163806439-1
+google-analytics: 
 
 # Disqus
-disqus-shortname: thedevslot
+disqus-shortname: 
 
 # Name of the Author
-author-name: TheDevsLot
+author-name: Tran Quoc Dang
 # URL for the Image of the Author
 author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
 # 60 Words About the Author
-author-about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget pharetra velit, dapibus bibendum ex. Maecenas vitae laoreet mauris, ac luctus metus. Aliquam luctus velit vel ipsum feugiat, vel venenatis mauris hendrerit. Sed at vulputate sapien, eget vehicula dolor. Aliquam volutpat pulvinar neque sit amet sodales.
+author-about: Data Engineer and aspiring professional with a passion for data science and technology. Currently pursuing a Bachelor's in Informatics and Computer Engineering at the International School, Vietnam National University.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://github.com/thedevslot
+author-url: https://github.com/collide0412
 
 # SASS
 sass:
