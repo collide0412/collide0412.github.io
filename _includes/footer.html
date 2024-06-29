@@ -28,23 +28,27 @@
             <!--Link Section-->
             <div class="column has-text-white">
                 <h3>More Links</h3>
-                {% for sitepage in site.html_pages %}
-                {% unless sitepage.url == '/' or sitepage.url contains 'feed.xml' %}
-                <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
-                </li>
-                {% endunless %}
-                {% endfor %}
+                <ul>
+                    {% for sitepage in site.html_pages %}
+                    {% unless sitepage.url == '/' or sitepage.url contains 'feed.xml' or sitepage.url contains '404.html' %}
+                    <li>
+                        <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
+                    </li>
+                    {% endunless %}
+                    {% endfor %}
+                </ul>
             </div>
 
             <!--Blog-post Section-->
             <div class="column has-text-white">
                 <h3>Recent Posts</h3>
-                {% for post in site.posts offset: 0 limit:3 %}
-                <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
-                </li>
-                {% endfor %}
+                <ul>
+                    {% for post in site.posts offset: 0 limit:3 %}
+                    <li>
+                        <a href="{{post.url | absolute_url}}">{{post.title}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>
