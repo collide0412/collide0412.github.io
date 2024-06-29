@@ -30,11 +30,11 @@
                 <h3>More Links</h3>
                 <ul>
                     {% for sitepage in site.html_pages %}
-                    {% unless sitepage.url == '/' or sitepage.url contains 'feed.xml' or sitepage.url contains '404.html' %}
+                    {% if sitepage.url != "/" and sitepage.url != "/404.html" and sitepage.url != "/feed.xml" %}
                     <li>
                         <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
                     </li>
-                    {% endunless %}
+                    {% endif %}
                     {% endfor %}
                 </ul>
             </div>
