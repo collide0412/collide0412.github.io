@@ -6,8 +6,8 @@ permalink: /certificates/
 
 <section class="section">
     <div class="container">
-        <div class="columns is-multiline">
-            <div class="column is-half">
+        <div class="columns is-multiline is-centered">
+            <div class="column is-one-third">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
@@ -21,16 +21,16 @@ permalink: /certificates/
                     </div>
                 </div>
             </div>
-            <div class="column is-half">
+            <div class="column is-one-third">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="{{ site.baseurl }}/assets/images/certificates/certificate2.jpg" alt="Certificate Title">
+                            <img src="{{ site.baseurl }}/assets/images/certificates/certificate2.jpg" alt="Google Data Analytics">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            <strong>Certificate Title</strong> - Issued by Institution
+                            <strong>Google Data Analytics</strong> - Issued by Coursera
                         </div>
                     </div>
                 </div>
