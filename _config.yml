@@ -18,8 +18,7 @@ site-keywords: Portfolio, Tran Quoc Dang, Data Engineer, Projects
 favicon-url: 
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-
+heroimage: https://collide0412.github.io/assets/images/homepage_image.jpeg 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
 email: collide0412@gmail.com
