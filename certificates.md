@@ -6,7 +6,6 @@ permalink: /certificates/
 
 <section class="section">
     <div class="container">
-        <h1 class="title">Certificates</h1>
         <div class="columns is-multiline">
             <div class="column is-half">
                 <div class="card">
