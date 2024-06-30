@@ -13,7 +13,7 @@ The TF Scale 2024 program was an incredible journey filled with new experiences,
 
 ## The Adventure Begins
 
-![Changi Airport](/assets/images/tf-scale-2024/IMG_0676.HEIC)
+![Changi Airport](/assets/images/tf-scale-2024/IMG_0676.jpg)
 At Changi Airport, where we had a blast exploring the Airport, the Jewel and taking in all the exciting rides and attractions.
 
 ## New Friendships
@@ -23,7 +23,7 @@ Meeting new friends and forming lasting friendships was one of the best parts of
 
 ## Cultural Exchange
 
-![Traditional Attire](/assets/images/tf-scale-2024/IMG_1407.heic)
+![Traditional Attire](/assets/images/tf-scale-2024/IMG_1407.jpg)
 We had the opportunity to participate in cultural exchange activities, where we wore traditional attire and learned about each other's cultures. This experience was both enriching and enjoyable.
 
 ## Night Out in the City
@@ -38,12 +38,12 @@ The workshops and sessions were incredibly informative and provided us with valu
 
 ## Fun and Laughter
 
-![Having Fun](/assets/images/tf-scale-2024/IMG_1290.HEIC)
+![Having Fun](/assets/images/tf-scale-2024/IMG_1290.jpg)
 Laughter was a constant companion throughout the program. Whether we were working on projects or simply hanging out, there was never a dull moment.
 
 ## Scenic Views
 
-![Marina Bay Sands](/assets/images/tf-scale-2024/IMG_1220.HEIC)
+![Marina Bay Sands](/assets/images/tf-scale-2024/IMG_1220.jpg)
 The view from Marina Bay Sands was breathtaking. It was a perfect spot to relax and take in the beauty of the city.
 
 ## Group Activities
