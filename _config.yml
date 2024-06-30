@@ -44,10 +44,6 @@ sass:
 # Build settings
 plugins:
   - jekyll-admin
-  - jekyll-feed
-
-# Permalink
-permalink: "blog/:title"
 
 # Compress
 compress_html:
@@ -57,21 +53,11 @@ compress_html:
 defaults:
   -
     scope:
-      type: 'posts'
-    values:
-      layout: post
-      post-image: ""
-      description: ""
-      tags:
-        - ""
-  -
-    scope:
       type: 'pages'
     values:
       layout: page
 
 # Exclude
-exclude:
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
@@ -82,4 +68,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
- 
