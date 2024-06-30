@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Awards & Honors"
-permalink: /awards_honors/
+permalink: /awards/
 ---
 
 <section class="section">
