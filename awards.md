@@ -9,6 +9,11 @@ permalink: /awards/
         <div class="columns is-multiline is-centered">
             <div class="column is-one-third">
                 <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="{{ site.baseurl }}/assets/images/awards/award1.jpg" alt="Excellent Student Title">
+                        </figure>
+                    </div>
                     <div class="card-content">
                         <div class="content">
                             <strong>Honors:</strong> "Excellent Student" title
@@ -31,6 +36,11 @@ permalink: /awards/
             </div>
             <div class="column is-one-third">
                 <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="{{ site.baseurl }}/assets/images/awards/award2.jpg" alt="Top 10 in Cybersecurity">
+                        </figure>
+                    </div>
                     <div class="card-content">
                         <div class="content">
                             <strong>Awards:</strong> Top 10 in Cybersecurity track
