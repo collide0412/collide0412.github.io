@@ -13,6 +13,7 @@ Hello! I am Tran Quoc Dang, currently pursuing a Master of Science in Informatio
 - **[Education](education)**
 - **[Work Experience](work)**
 - **[Projects](projects)**
+- **[Research](research)**
 - **[Leadership](leadership)**
 - **[Certificates](certificates)**
 - **[Skills](skills)**

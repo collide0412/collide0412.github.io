@@ -4,8 +4,16 @@ title: Skills
 permalink: /skills/
 ---
 
-## Skills
+## Technical Skills
 
-- **Languages**: Full Professional Proficiency in English (B2 VSTEP); French (Beginner), Russian (Beginner)
-- **Technical Skills**: Experience in Python and Linux, Data Engineering, Machine Learning (Basic)
+- **Programming Languages**: Python
+- **Operating Systems**: Linux
+- **Data & Analytics**: Data Engineering, Data Analytics, Machine Learning
+- **IT Support**: IT Helpdesk
+
+## Supplementary Skills
+
+- **Languages**: Vietnamese (native), English (full professional proficiency - B2 CEFR), French (elementary proficiency), Russian (elementary proficiency)
+- **Creative Skills**: Filmmaking, video editing (Premiere Pro, Final Cut Pro), photography
+- **Event Management**: Event technical support
 - **Soft Skills**: Teamwork, Leadership, Communication, Problem-Solving

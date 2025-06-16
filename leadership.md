@@ -12,7 +12,7 @@ Nov 2022 - Oct 2023
 - Applied data cleaning skills to improve the organization's database, removing obsolete content and ensuring data accuracy
 - Led the communication branch, overseeing the creation and dissemination of promotional materials, social media content, and event announcements
 
-**ISTECH - International School Club of CompSci and Technology**  
+**ISTECH - International School Club of Computer Science and Technology**  
 _IoT Operations Team Lead_  
 Nov 2021 - Feb 2022  
 - Trained other members about IoT basic skills
