@@ -4,14 +4,25 @@ title: "Certificates"
 permalink: /certificates/
 ---
 
+<style>
+.wide-award-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
 <section class="section">
     <div class="container">
         <div class="columns is-multiline is-centered">
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="{{ site.baseurl }}/assets/images/certificates/certificate1.jpg" alt="Agile Project Management">
+                        <figure class="image">
+                            <img class="wide-award-image" src="{{ site.baseurl }}/assets/images/certificates/certificate1.jpg" alt="Agile Project Management">
                         </figure>
                     </div>
                     <div class="card-content">
@@ -26,8 +37,8 @@ permalink: /certificates/
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="{{ site.baseurl }}/assets/images/certificates/certificate2.jpg" alt="Google Cybersecurity">
+                        <figure class="image">
+                            <img class="wide-award-image" src="{{ site.baseurl }}/assets/images/certificates/certificate2.jpg" alt="Google Cybersecurity">
                         </figure>
                     </div>
                     <div class="card-content">
@@ -42,8 +53,8 @@ permalink: /certificates/
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="{{ site.baseurl }}/assets/images/certificates/certificate3.jpg" alt="Google Data Analytics">
+                        <figure class="image">
+                            <img class="wide-award-image" src="{{ site.baseurl }}/assets/images/certificates/certificate3.jpg" alt="Google Data Analytics">
                         </figure>
                     </div>
                     <div class="card-content">
@@ -58,8 +69,8 @@ permalink: /certificates/
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="{{ site.baseurl }}/assets/images/certificates/certificate4.jpg" alt="Google Project Management">
+                        <figure class="image">
+                            <img class="wide-award-image" src="{{ site.baseurl }}/assets/images/certificates/certificate4.jpg" alt="Google Project Management">
                         </figure>
                     </div>
                     <div class="card-content">

@@ -4,14 +4,25 @@ title: "Awards & Honors"
 permalink: /awards/
 ---
 
+<style>
+.wide-award-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
 <section class="section">
     <div class="container">
         <div class="columns is-multiline is-centered">
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="{{ site.baseurl }}/assets/images/awards/award1.jpg" alt="Excellent Student Title">
+                        <figure class="image">
+                            <img class="wide-award-image" src="{{ site.baseurl }}/assets/images/awards/award1.jpg" alt="Excellent Student Title">
                         </figure>
                     </div>
                     <div class="card-content">
@@ -37,8 +48,8 @@ permalink: /awards/
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="{{ site.baseurl }}/assets/images/awards/award2.jpg" alt="Top 10 in Cybersecurity">
+                        <figure class="image">
+                            <img class="wide-award-image" src="{{ site.baseurl }}/assets/images/awards/award2.jpg" alt="Top 10 in Cybersecurity">
                         </figure>
                     </div>
                     <div class="card-content">
