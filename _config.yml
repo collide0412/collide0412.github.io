@@ -13,7 +13,7 @@ description: A portfolio showcasing my education, work experience, projects, and
 # URL of Image of the Site
 site-image: /assets/images/meta.jpg
 # Keywords of the Site
-site-keywords: Portfolio, Tran Quoc Dang, Data Engineer, Projects
+site-keywords: Portfolio, Tran Quoc Dang, Information and Communication Engineering, Research, Projects
 # URL for the Image of custom Favicon
 favicon-url: 
 
@@ -32,7 +32,7 @@ author-name: Tran Quoc Dang
 # URL for the Image of the Author
 author-image: https://collide0412.github.io/assets/images/profile.jpg
 # 60 Words About the Author
-author-about: Data Engineer and aspiring professional with a passion for data science and technology. Currently pursuing a Bachelor's in Informatics and Computer Engineering at the International School, Vietnam National University.
+author-about: Researcher and MSc student in Information and Communication Engineering at Chungbuk National University, South Korea. Passionate about research and development in information and communication technologies.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/collide0412
 

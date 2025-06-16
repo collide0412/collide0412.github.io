@@ -6,7 +6,7 @@ permalink: /
 
 # Welcome to My Portfolio
 
-Hello! I am Tran Quoc Dang, currently pursuing a Bachelor's program in Informatics and Computer Engineering at the International School, Vietnam National University, Hanoi. I am passionate about data engineering and have experience in various related fields.
+Hello! I am Tran Quoc Dang, currently pursuing a Master of Science in Information and Communication Engineering at Chungbuk National University, South Korea. I am passionate about research and development in information and communication technologies, working as a researcher in my university's lab.
 
 ## Explore My Work
 
