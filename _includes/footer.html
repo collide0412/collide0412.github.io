@@ -1,46 +1,57 @@
-<footer id="footer">
-    <!--Footer Button-->
-    <div class="container has-text-centered has-background-grey-darker" id="backtotop">
-        <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
-    </div>
-    <!--Footer Main Section-->
-    <div class="has-background-grey-darker">
-        <div class="container columns">
-            <!--Name Section-->
-            <div class="column has-text-left-desktop has-text-centered-mobile">
-                <a href="{{site.url}}{{site.baseurl}}/#about">
-                    <div class="columns">
-                        <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
-                            <figure class="image is-64x64">
-                                <img class="is-rounded" src="{{site.author-image}}">
-                            </figure>
-                        </div>
-                        <div class="column is-marginless">
-                            <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
-                            <div class="content has-text-grey">
-                                <p>{{site.author-about | truncate: 75 }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+<footer id="footer" style="background-color: var(--bg-color); border-top: 1px solid var(--border); padding: 4rem 0 2rem;">
+    <div class="container">
+        <div class="columns is-multiline is-justify-content-space-between">
+            <!-- Brand / About Section -->
+            <div class="column is-4-desktop is-12-tablet" style="margin-bottom: 2rem;">
+                <h3 class="title is-4" style="color: var(--text-color); font-weight: 700; margin-bottom: 1rem;">{{site.author-name}}</h3>
+                <p class="has-text-grey" style="line-height: 1.6;">
+                    Researcher & MSc Student specialized in Information and Communication Engineering. Exploring the intersections of Data Engineering and advanced networking.
+                </p>
+                <div style="margin-top: 1.5rem;">
+                    {% if site.github_username %}
+                    <a href="https://github.com/{{site.github_username}}" class="icon is-medium has-text-grey" target="_blank" style="margin-right: 10px; transition: color 0.2s;">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                    {% endif %}
+                    {% if site.linkedin_username %}
+                    <a href="https://linkedin.com/in/{{site.linkedin_username}}" class="icon is-medium has-text-grey" target="_blank" style="transition: color 0.2s;">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    {% endif %}
+                </div>
             </div>
 
-            <!--Link Section-->
-            <div class="column has-text-white">
-                <h3>More Links</h3>
-                <ul>
-                    {% for sitepage in site.html_pages %}
-                    {% if sitepage.url != "/" and sitepage.url != "/404.html" and sitepage.url != "/feed.xml" %}
-                    <li>
-                        <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
+            <!-- Quick Links -->
+            <div class="column is-3-desktop is-6-tablet" style="margin-bottom: 2rem;">
+                <h4 class="title is-5" style="color: var(--text-color); font-weight: 600; margin-bottom: 1rem;">Quick Links</h4>
+                <ul style="list-style: none; margin: 0; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><a href="{{site.baseurl}}/" class="has-text-grey">Home</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="{{site.baseurl}}/portfolio" class="has-text-grey">Portfolio & CV</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="{{site.baseurl}}/blog" class="has-text-grey">Blog Collection</a></li>
                 </ul>
             </div>
+
+            <!-- Contact -->
+            <div class="column is-4-desktop is-6-tablet" style="margin-bottom: 2rem;">
+                <h4 class="title is-5" style="color: var(--text-color); font-weight: 600; margin-bottom: 1rem;">Contact Me</h4>
+                <p class="has-text-grey" style="margin-bottom: 1rem;">Feel free to reach out for collaborations or just a friendly chat.</p>
+                <a href="mailto:{{ site.email }}" class="button is-primary is-outlined is-rounded">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                    <span>Say Hello</span>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="has-background-black has-text-centered has-text-white" id="credits">
-        &copy; {{ "now" | date: "%Y" }} | Tran Quoc Dang's Portfolio
+
+        <hr style="background-color: var(--border); margin: 2rem 0;">
+
+        <!-- Copyright & Back to Top -->
+        <div class="is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap">
+            <p class="has-text-grey is-size-7" style="margin-bottom: 0.5rem;">
+                &copy; {{ "now" | date: "%Y" }} Tran Quoc Dang. All rights reserved.
+            </p>
+            <a onclick="window.scroll({top: 0, behavior: 'smooth'})" class="has-text-grey is-size-7 is-clickable" style="display: flex; align-items: center; gap: 0.5rem;">
+                BACK TO TOP <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
     </div>
 </footer>
