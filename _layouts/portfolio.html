@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body style="padding-top: 80px;">
+    {% include navbar.html %}
+    <section class="section">
+        <div class="container">
+            <h1 class="title is-1" style="margin-bottom: 3rem;">My Portfolio & Background</h1>
+            
+            <div class="vertical-container">
+                <aside class="sidebar-menu">
+                    <p class="menu-label is-uppercase has-text-grey" style="letter-spacing: 1px; font-size: 0.8rem; margin-left: 20px; font-weight: 700;">Career Profile</p>
+                    <a class="is-active" onclick="showTab(event, 'edu-tab')">Education</a>
+                    <a onclick="showTab(event, 'work-tab')">Work Experience</a>
+                    <a onclick="showTab(event, 'skills-tab')">Skills</a>
+                    <a onclick="showTab(event, 'cert-tab')">Certificates</a>
+                    <a onclick="showTab(event, 'projects-tab')">Projects</a>
+                    <br/>
+                    <p class="menu-label is-uppercase has-text-grey" style="letter-spacing: 1px; font-size: 0.8rem; margin-left: 20px; font-weight: 700;">Activities</p>
+                    <a onclick="showTab(event, 'lead-tab')">Leadership</a>
+                    <a onclick="showTab(event, 'extra-tab')">Extracurricular</a>
+                    <a onclick="showTab(event, 'awards-tab')">Awards & Honors</a>
+                </aside>
+
+                <div class="content" style="flex: 1; min-height: 600px; padding: 2rem; background: white; border-radius: 16px; border: 1px solid #f3f4f6; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+                    
+                    <div id="edu-tab" class="tab-content is-active">
+                        <h2 class="title is-3" style="margin-top: 0;">Education</h2>
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">Master of Science in Information and Communication Engineering</div>
+                                    <div class="item-org">Chungbuk National University, South Korea</div>
+                                </div>
+                                <div class="item-date">Mar 2025 - present</div>
+                            </div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">Bachelor of Informatics and Computer Engineering</div>
+                                    <div class="item-org">International School - Vietnam National University, Hanoi</div>
+                                </div>
+                                <div class="item-date">Oct 2020 - Aug 2024</div>
+                            </div>
+                            <p><strong>Graduation Classification:</strong> Good</p>
+                        </div>
+                    </div>
+
+                    <div id="work-tab" class="tab-content">
+                        <h2 class="title is-3" style="margin-top: 0;">Work Experience</h2>
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">Ambassador Programme Taskforce Member</div>
+                                    <div class="item-org">United Nations PRME Global Students</div>
+                                </div>
+                                <div class="item-date">Aug 2024 - present</div>
+                            </div>
+                            <ul>
+                                <li>Promoted responsible management education internationally and developed strategies for sustainable business curricula.</li>
+                                <li>Represented the PRME initiative in global forums advocating for educational reforms (UN SDGs).</li>
+                                <li>Cultivated partnerships with academic institutions.</li>
+                            </ul>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">Data Engineer Internship</div>
+                                    <div class="item-org">Viettel IDC</div>
+                                </div>
+                                <div class="item-date">Mar 2023 - Sep 2023</div>
+                            </div>
+                            <ul>
+                                <li>Utilized Python automation tools to fetch and initialize data.</li>
+                                <li>Cleaned and filtered data for integration into the data warehouse ensuring data quality.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="skills-tab" class="tab-content">
+                        <h2 class="title is-3" style="margin-top: 0;">Skills</h2>
+                        <div class="columns is-multiline" style="margin-top: 1rem;">
+                            <div class="column is-6">
+                                <div class="card" style="height: 100%; border: none; background: #f8fafc;">
+                                    <div class="card-content">
+                                        <p class="title is-5" style="color: #2563eb;">Technical</p>
+                                        <p><strong>Languages:</strong> Python</p>
+                                        <p><strong>OS:</strong> Linux</p>
+                                        <p><strong>Data:</strong> Data Engineering, Data Analytics, Machine Learning</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-6">
+                                <div class="card" style="height: 100%; border: none; background: #f8fafc;">
+                                    <div class="card-content">
+                                        <p class="title is-5" style="color: #2563eb;">Languages</p>
+                                        <p>Vietnamese (Native)</p>
+                                        <p>English (B2 CEFR)</p>
+                                        <p>French (Elementary)</p>
+                                        <p>Russian (Elementary)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="cert-tab" class="tab-content">
+                        <h2 class="title is-3" style="margin-top: 0;">Certificates</h2>
+                        <p class="has-text-grey" style="margin-bottom: 2rem;">These records validate my proficiency and continuous learning trajectory.</p>
+                        <!-- Certificates list summarized -->
+                        <div class="item-block">
+                            <div class="item-title">Google Data Analytics Professional Certificate</div>
+                            <div class="item-org">Coursera</div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-title">IBM Data Science Professional Certificate</div>
+                            <div class="item-org">Coursera</div>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-title">AWS Certified Cloud Practitioner</div>
+                            <div class="item-org">Amazon Web Services</div>
+                        </div>
+                    </div>
+
+                    <div id="projects-tab" class="tab-content">
+                        <h2 class="title is-3" style="margin-top: 0;">Projects</h2>
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">People Search Engine</div>
+                                    <div class="item-org">Back-end Developer, Data Engineer</div>
+                                </div>
+                                <div class="item-date">Jan 2024 - Aug 2024</div>
+                            </div>
+                            <ul>
+                                <li>Developed and deployed backend for a people search engine using Django REST Framework.</li>
+                                <li>Implemented user management, authentication, and PostgreSQL search functionalities.</li>
+                                <li>Automated data scraping and integration.</li>
+                            </ul>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">Audiobook Generator</div>
+                                    <div class="item-org">Developer</div>
+                                </div>
+                                <div class="item-date">Jun 2024 - Sep 2024</div>
+                            </div>
+                            <ul>
+                                <li>Developed an application to create audiobooks from PDF/HTML using Google Cloud TTS.</li>
+                                <li>Built a Flask UI and CLI for system interaction.</li>
+                            </ul>
+                        </div>
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">Financial Performance Analysis & AI-Based Stock Prediction</div>
+                                    <div class="item-org">Data Analyst</div>
+                                </div>
+                                <div class="item-date">Mar 2024 - Jun 2024</div>
+                            </div>
+                            <ul>
+                                <li>Conducted financial analysis of Sabeco and developed ML predictive models (LSTM, GRU).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="lead-tab" class="tab-content">
+                        <h2 class="title is-3" style="margin-top: 0;">Leadership</h2>
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">Founder / President</div>
+                                    <div class="item-org">Tech Innovators Club at VNU</div>
+                                </div>
+                                <div class="item-date">2021 - 2023</div>
+                            </div>
+                            <p>Organized workshops, hackathons, and mentored junior members in data science concepts.</p>
+                        </div>
+                    </div>
+
+                    <div id="extra-tab" class="tab-content">
+                        <h2 class="title is-3" style="margin-top: 0;">Extracurricular Activities</h2>
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">Data Science Operations Team Member</div>
+                                    <div class="item-org">ISTECH</div>
+                                </div>
+                                <div class="item-date">Nov 2020 - present</div>
+                            </div>
+                            <ul>
+                                <li>Analyzed data and created predictive models for club projects.</li>
+                                <li>Trained 15+ members in Data Science and Data Engineering.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="awards-tab" class="tab-content">
+                        <h2 class="title is-3" style="margin-top: 0;">Awards & Honors</h2>
+                        <div class="columns is-multiline">
+                            <div class="column is-6">
+                                <div class="card" style="box-shadow: none; border: 2px solid #eff6ff;">
+                                    <div class="card-content">
+                                        <p class="title is-5" style="margin-bottom: 0.5rem; color: #111827;">"Excellent Student" Title</p>
+                                        <p class="has-text-grey is-size-7">Academic Years 2020-2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-6">
+                                <div class="card" style="box-shadow: none; border: 2px solid #eff6ff;">
+                                    <div class="card-content">
+                                        <p class="title is-5" style="margin-bottom: 0.5rem; color: #111827;">Top 10 Cybersecurity Track</p>
+                                        <p class="has-text-grey is-size-7">JunctionX Hackathon Vietnam 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer begins here-->
+    {% include footer.html %}
+
+    <script>
+        function showTab(event, tabId) {
+            let menus = document.querySelectorAll(".sidebar-menu a");
+            menus.forEach(m => m.classList.remove("is-active"));
+            event.target.classList.add("is-active");
+
+            let tabs = document.querySelectorAll(".tab-content");
+            tabs.forEach(t => t.classList.remove("is-active"));
+            document.getElementById(tabId).classList.add("is-active");
+        }
+    </script>
+</body>
+</html>
+
