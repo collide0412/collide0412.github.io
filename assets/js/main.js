@@ -1,13 +1,10 @@
-﻿// Theme Toggle Logic
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     
-    if (currentTheme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    }
-
-    if(themeToggle) {
+    if (themeToggle) {
+        themeToggle.innerHTML = currentTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        
         themeToggle.addEventListener('click', () => {
             let theme = document.documentElement.getAttribute('data-theme');
             let switchToTheme = theme === 'dark' ? 'light' : 'dark';
