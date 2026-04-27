@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Include Meta Tags Here -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,10 +49,36 @@
 
     gtag('config', '');
 </script>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Portfolio | Tran Quoc Dang’s Portfolio</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Portfolio" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A portfolio showcasing my education, work experience, projects, and skills" />
+<meta property="og:description" content="A portfolio showcasing my education, work experience, projects, and skills" />
+<link rel="canonical" href="https://collide0412.github.io/portfolio/" />
+<meta property="og:url" content="https://collide0412.github.io/portfolio/" />
+<meta property="og:site_name" content="Tran Quoc Dang’s Portfolio" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Portfolio" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A portfolio showcasing my education, work experience, projects, and skills","headline":"Portfolio","url":"https://collide0412.github.io/portfolio/"}</script>
+<!-- End Jekyll SEO tag -->
+
     <title>Tran Quoc Dang's Portfolio</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="https://collide0412.github.io/assets/images/logo.png" type="image/x-icon">
+    
+    <!-- Theme Script (Execute early to prevent FOUC) -->
+    <script>
+        const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+    <script defer src="/assets/js/main.js"></script>
 </head>
 
 <body style="padding-top: 80px;">
@@ -67,13 +95,20 @@
             </div>
         </div>
 
-        <div class="navbar-menu" id="navbar-menu" style="background: rgba(255,255,255,0.95)">
+        <div class="navbar-menu" id="navbar-menu" style="background: rgba(var(--bg-color-rgb, 255,255,255), 0.95); transition: background 0.3s ease;">
             <div class="navbar-end">
                 <a class="navbar-item" href="/#about">ABOUT ME</a>
                 <a class="navbar-item" href="/portfolio">PORTFOLIO</a>
                 <a class="navbar-item" href="/research">RESEARCH</a>
                 <a class="navbar-item" href="/blog">BLOG</a>
                 <a class="navbar-item" href="/#contact">CONTACT</a>
+                
+                <!-- Dark Mode Toggle Button -->
+                <div class="navbar-item" style="display: flex; align-items: center; padding-left: 1.5rem;">
+                    <button id="theme-toggle" class="button is-white is-rounded" style="background: transparent; border: 1px solid var(--border); color: var(--text-main); box-shadow: none;" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -314,21 +349,82 @@
 
                     <div id="projects-tab" class="tab-content">
                         <h2 class="title is-3" style="margin-top: 0;">Projects</h2>
+                        
                         <div class="item-block">
                             <div class="item-meta">
                                 <div>
                                     <div class="item-title">People Search Engine</div>
-                                    <div class="item-org">Back-end Developer, Data Engineer</div>
+                                    
                                 </div>
-                                <div class="item-date">Jan 2024 - Sep 2024</div>
+                                
                             </div>
-                            <ul>
-                                <li>Developed a secure RESTful API with Django.</li>
-                                <li>Implemented user management, authentication, and search features in PostgreSQL.</li>
-                                <li>Utilized Swagger to streamline API documentation and testing, ensuring effective collaboration with the frontend team.</li>
-                                <li>Automated data scraping from various sources.</li>
-                            </ul>
+                            <p class="has-text-grey" style="margin-bottom: 1rem;">
+                                Developed and deployed the backend for a people search engine, focusing on creating a secure and scalable RESTful API using Django REST Framework. Implemented user management features, authentication, and various search functionalities to retrieve information from a PostgreSQL database. Utilized Swagger to streamline API documentation and testing, ensuring effective collaboration with the frontend team. Implemented automated tool for scraping and gathering data from various sources automatically.
+                            </p>
+                            
+                            <a href="https://github.com/collide0412/people-search-engine" target="_blank" class="button is-small is-primary is-outlined is-rounded">
+                                <span class="icon"><i class="fab fa-github"></i></span>
+                                <span>View Source</span>
+                            </a>
+                            
                         </div>
+                        
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">Data Cleaning for IScholar</div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <p class="has-text-grey" style="margin-bottom: 1rem;">
+                                Applied data cleaning skills to improve the organization's database, removing obsolete content and ensuring data accuracy. Led the communication branch, overseeing the creation and dissemination of promotional materials, social media content, and event announcements.
+                            </p>
+                            
+                        </div>
+                        
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">IoT Backend Development</div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <p class="has-text-grey" style="margin-bottom: 1rem;">
+                                Trained other members in IoT basic skills and developed the backend to integrate with middleware. Focused on building scalable solutions and ensuring seamless communication between IoT devices and the server.
+                            </p>
+                            
+                        </div>
+                        
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">Data Analysis for ISTECH</div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <p class="has-text-grey" style="margin-bottom: 1rem;">
+                                Analyzed data and created predictive models for club projects. Participated in data science hackathons hosted by Kaggle, Shopee, etc., and trained 15+ members in data science and data engineering concepts and tools.
+                            </p>
+                            
+                        </div>
+                        
+                        <div class="item-block">
+                            <div class="item-meta">
+                                <div>
+                                    <div class="item-title">Automation Tools for Viettel IDC</div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <p class="has-text-grey" style="margin-bottom: 1rem;">
+                                Utilized automation tools written in Python to fetch and initialize data. Cleaned and filtered data for integration into the data warehouse, ensuring data quality and accuracy. Maintained automation tool workflows, contributing to the smooth execution of the project.
+                            </p>
+                            
+                        </div>
+                        
                         <div class="item-block">
                             <div class="item-meta">
                                 <div>
@@ -337,12 +433,12 @@
                                 </div>
                                 <div class="item-date">Jun 2024 - Sep 2024</div>
                             </div>
-                            <ul>
-                                <li>Created an audiobook generator using Google Cloud Text-to-Speech.</li>
-                                <li>Implemented both a user interface (UI) using Flask and a command-line interface (CLI) for system interaction.</li>
-                                <li>Developed commands for generating audio from PDFs and HTML URLs, and for checking the status of generated audio operations.</li>
-                            </ul>
+                            <p class="has-text-grey" style="margin-bottom: 1rem;">
+                                Created an audiobook generator using Google Cloud Text-to-Speech. Implemented both a user interface (UI) using Flask and a command-line interface (CLI) for system interaction. Developed commands for generating audio from PDFs and HTML URLs, and for checking the status of generated audio operations.
+                            </p>
+                            
                         </div>
+                        
                     </div>
 
                     <div id="research-tab" class="tab-content">

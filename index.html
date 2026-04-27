@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Include Meta Tags Here -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,10 +49,36 @@
 
     gtag('config', '');
 </script>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Home | Tran Quoc Dang’s Portfolio</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Home" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A portfolio showcasing my education, work experience, projects, and skills" />
+<meta property="og:description" content="A portfolio showcasing my education, work experience, projects, and skills" />
+<link rel="canonical" href="https://collide0412.github.io/" />
+<meta property="og:url" content="https://collide0412.github.io/" />
+<meta property="og:site_name" content="Tran Quoc Dang’s Portfolio" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"A portfolio showcasing my education, work experience, projects, and skills","headline":"Home","name":"Tran Quoc Dang’s Portfolio","url":"https://collide0412.github.io/"}</script>
+<!-- End Jekyll SEO tag -->
+
     <title>Tran Quoc Dang's Portfolio</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="https://collide0412.github.io/assets/images/logo.png" type="image/x-icon">
+    
+    <!-- Theme Script (Execute early to prevent FOUC) -->
+    <script>
+        const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+    <script defer src="/assets/js/main.js"></script>
 </head>
 
 <body>
@@ -67,13 +95,20 @@
             </div>
         </div>
 
-        <div class="navbar-menu" id="navbar-menu" style="background: rgba(255,255,255,0.95)">
+        <div class="navbar-menu" id="navbar-menu" style="background: rgba(var(--bg-color-rgb, 255,255,255), 0.95); transition: background 0.3s ease;">
             <div class="navbar-end">
                 <a class="navbar-item" href="/#about">ABOUT ME</a>
                 <a class="navbar-item" href="/portfolio">PORTFOLIO</a>
                 <a class="navbar-item" href="/research">RESEARCH</a>
                 <a class="navbar-item" href="/blog">BLOG</a>
                 <a class="navbar-item" href="/#contact">CONTACT</a>
+                
+                <!-- Dark Mode Toggle Button -->
+                <div class="navbar-item" style="display: flex; align-items: center; padding-left: 1.5rem;">
+                    <button id="theme-toggle" class="button is-white is-rounded" style="background: transparent; border: 1px solid var(--border); color: var(--text-main); box-shadow: none;" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
