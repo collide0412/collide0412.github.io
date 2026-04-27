@@ -222,35 +222,26 @@
 
                     <div id="projects-tab" class="tab-content">
                         <h2 class="title is-3" style="margin-top: 0;">Projects</h2>
+                        {% for project in site.data.projects %}
                         <div class="item-block">
                             <div class="item-meta">
                                 <div>
-                                    <div class="item-title">People Search Engine</div>
-                                    <div class="item-org">Back-end Developer, Data Engineer</div>
+                                    <div class="item-title">{{ project.name }}</div>
+                                    {% if project.role %}<div class="item-org">{{ project.role }}</div>{% endif %}
                                 </div>
-                                <div class="item-date">Jan 2024 - Sep 2024</div>
+                                {% if project.date %}<div class="item-date">{{ project.date }}</div>{% endif %}
                             </div>
-                            <ul>
-                                <li>Developed a secure RESTful API with Django.</li>
-                                <li>Implemented user management, authentication, and search features in PostgreSQL.</li>
-                                <li>Utilized Swagger to streamline API documentation and testing, ensuring effective collaboration with the frontend team.</li>
-                                <li>Automated data scraping from various sources.</li>
-                            </ul>
+                            <p class="has-text-grey" style="margin-bottom: 1rem;">
+                                {{ project.description }}
+                            </p>
+                            {% if project.link %}
+                            <a href="{{ project.link }}" target="_blank" class="button is-small is-primary is-outlined is-rounded">
+                                <span class="icon"><i class="fab fa-github"></i></span>
+                                <span>View Source</span>
+                            </a>
+                            {% endif %}
                         </div>
-                        <div class="item-block">
-                            <div class="item-meta">
-                                <div>
-                                    <div class="item-title">Audiobook Generator</div>
-                                    <div class="item-org">Developer</div>
-                                </div>
-                                <div class="item-date">Jun 2024 - Sep 2024</div>
-                            </div>
-                            <ul>
-                                <li>Created an audiobook generator using Google Cloud Text-to-Speech.</li>
-                                <li>Implemented both a user interface (UI) using Flask and a command-line interface (CLI) for system interaction.</li>
-                                <li>Developed commands for generating audio from PDFs and HTML URLs, and for checking the status of generated audio operations.</li>
-                            </ul>
-                        </div>
+                        {% endfor %}
                     </div>
 
                     <div id="research-tab" class="tab-content">

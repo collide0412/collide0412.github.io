@@ -11,13 +11,20 @@
             </div>
         </div>
 
-        <div class="navbar-menu" id="navbar-menu" style="background: rgba(255,255,255,0.95)">
+        <div class="navbar-menu" id="navbar-menu" style="background: rgba(var(--bg-color-rgb, 255,255,255), 0.95); transition: background 0.3s ease;">
             <div class="navbar-end">
                 <a class="navbar-item" href="{{site.baseurl}}/#about">ABOUT ME</a>
                 <a class="navbar-item" href="{{site.baseurl}}/portfolio">PORTFOLIO</a>
                 <a class="navbar-item" href="{{site.baseurl}}/research">RESEARCH</a>
                 <a class="navbar-item" href="{{site.baseurl}}/blog">BLOG</a>
                 <a class="navbar-item" href="{{site.baseurl}}/#contact">CONTACT</a>
+                
+                <!-- Dark Mode Toggle Button -->
+                <div class="navbar-item" style="display: flex; align-items: center; padding-left: 1.5rem;">
+                    <button id="theme-toggle" class="button is-white is-rounded" style="background: transparent; border: 1px solid var(--border); color: var(--text-main); box-shadow: none;" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

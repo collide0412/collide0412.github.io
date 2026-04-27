@@ -1,4 +1,4 @@
-# WhatATheme
+﻿# WhatATheme
 markdown: kramdown
 
 # URL of the Site
@@ -42,8 +42,35 @@ sass:
   style: compressed
 
 # Build settings
+
+# Mới được tối ưu hóa (SEO, Build, Cấu trúc)
 plugins:
   - jekyll-admin
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - scripts/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
 
 # Compress
 compress_html:
@@ -68,3 +95,4 @@ defaults:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+

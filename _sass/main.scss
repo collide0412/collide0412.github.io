@@ -1,15 +1,38 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css");
 
 :root {
   --primary: #4f46e5;
+  --primary-light: #e0e7ff;
   --bg-color: #fafafa;
   --text-main: #1f2937;
   --text-muted: #6b7280;
   --bg-card: #ffffff;
-  --border: #f3f4f6;
-  --primary-light: #e0e7ff;
+  --border: #e5e7eb;
+}
+
+[data-theme="dark"] {
+  --primary: #818cf8;
+  --primary-light: #3730a3;
+  --bg-color: #111827;
+  --text-main: #f9fafb;
+  --text-muted: #9ca3af;
+  --bg-card: #1f2937;
+  --border: #374151;
+}
+
+html[data-theme="dark"] img {
+  filter: brightness(.8) contrast(1.2);
+}
+
+html[data-theme="dark"] .navbar {
+  background: rgba(17, 24, 39, 0.85) !important;
+}
+
+html[data-theme="dark"] .title, 
+html[data-theme="dark"] .subtitle {
+  color: var(--text-main) !important;
 }
 
 html, body {
@@ -137,4 +160,5 @@ html, body {
 .item-date { background: var(--primary-light); color: var(--primary); font-size: 0.85rem; font-weight: 600; padding: 4px 12px; border-radius: 99px; }
 
 ::selection { background: rgba(37,99,235,0.2); }
+
 

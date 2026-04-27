@@ -1,4 +1,4 @@
-- name: People Search Engine
+﻿- name: People Search Engine
   image: https://cdn.pixabay.com/photo/2021/08/19/16/18/search-6551387_960_720.jpg
   link: https://github.com/collide0412/people-search-engine
   description: Developed and deployed the backend for a people search engine, focusing on creating a secure and scalable RESTful API using Django REST Framework. Implemented user management features, authentication, and various search functionalities to retrieve information from a PostgreSQL database. Utilized Swagger to streamline API documentation and testing, ensuring effective collaboration with the frontend team. Implemented automated tool for scraping and gathering data from various sources automatically.
@@ -22,3 +22,11 @@
   image: https://cdn.pixabay.com/photo/2018/03/26/17/50/workspace-3265922_960_720.jpg
   link: 
   description: Utilized automation tools written in Python to fetch and initialize data. Cleaned and filtered data for integration into the data warehouse, ensuring data quality and accuracy. Maintained automation tool workflows, contributing to the smooth execution of the project.
+
+
+- name: Audiobook Generator
+  role: Developer
+  date: Jun 2024 - Sep 2024
+  image: https://cdn.pixabay.com/photo/2015/05/15/14/56/audio-768565_960_720.jpg
+  link: 
+  description: Created an audiobook generator using Google Cloud Text-to-Speech. Implemented both a user interface (UI) using Flask and a command-line interface (CLI) for system interaction. Developed commands for generating audio from PDFs and HTML URLs, and for checking the status of generated audio operations.
