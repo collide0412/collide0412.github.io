@@ -286,6 +286,17 @@ html, body {
   color: var(--text-main);
 }
 
+[data-theme="dark"] .vertical-container > .content {
+  background-color: var(--bg-card) !important;
+  border-color: var(--border) !important;
+  color: var(--text-main);
+}
+
+[data-theme="dark"] .vertical-container > .content .card {
+  background-color: var(--bg-card) !important;
+  color: var(--text-main);
+}
+
 /* === MOBILE UI IMPROVEMENTS === */
 @media screen and (max-width: 768px) {
   .container {
