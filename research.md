@@ -8,8 +8,8 @@ permalink: /research/
   <div class="column is-10-desktop is-12-tablet has-text-left">
     
     <div class="box" style="background-color: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; transition: transform 0.2s ease, box-shadow 0.2s ease;">
-      <h3 class="title is-4 mb-2" style="color: var(--primary);">Automatic Attendance System based on Face Recognition</h3>
-      <div class="subtitle is-6 mb-4" style="color: var(--text-muted); font-weight: 500; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+      <h3 style="color: var(--primary); font-size: 1.5rem; font-weight: 700; margin-top: 0; margin-bottom: 0.75rem; line-height: 1.3;">Automatic Attendance System based on Face Recognition</h3>
+      <div style="color: var(--text-muted); font-weight: 500; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
         <span class="icon-text">
           <span class="icon"><i class="fas fa-user-tie"></i></span>
           <span>Team Leader</span>
@@ -30,8 +30,8 @@ permalink: /research/
     </div>
 
     <div class="box" style="background-color: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; transition: transform 0.2s ease, box-shadow 0.2s ease;">
-      <h3 class="title is-4 mb-2" style="color: var(--primary);">Predictive Modeling for Student Performance in Education</h3>
-      <div class="subtitle is-6 mb-4" style="color: var(--text-muted); font-weight: 500; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+      <h3 style="color: var(--primary); font-size: 1.5rem; font-weight: 700; margin-top: 0; margin-bottom: 0.75rem; line-height: 1.3;">Predictive Modeling for Student Performance in Education</h3>
+      <div style="color: var(--text-muted); font-weight: 500; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
         <span class="icon-text">
           <span class="icon"><i class="fas fa-user-tie"></i></span>
           <span>Team Leader</span>
