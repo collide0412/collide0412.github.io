@@ -161,6 +161,51 @@ html, body {
 
 ::selection { background: rgba(37,99,235,0.2); }
 
+/* Research Page */
+.research-page {
+  text-align: left;
+  max-width: 920px;
+  margin: 0 auto;
+}
+.research-intro {
+  color: var(--text-muted);
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+}
+.research-page .item-block {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background-color: var(--bg-card);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+}
+.research-page .item-block:last-child {
+  border-bottom: 1px solid var(--border);
+}
+.research-page .item-meta {
+  gap: 0.75rem;
+}
+.research-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+.research-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.65rem;
+  color: var(--text-main);
+}
+.research-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
 
 
 /* === COMPREHENSIVE DARK MODE OVERRIDES === */
