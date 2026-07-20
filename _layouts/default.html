@@ -1,41 +1,15 @@
 ---
 layout: compress
 ---
-
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 {% include head.html %}
-
-<body>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   {% include navbar.html %}
-  {% include showcase.html %}
-  {% include about.html %}
-  {% include contact.html %}
-  <!--Footer begins here-->
+  <main id="main-content" tabindex="-1">
+    {{ content }}
+  </main>
   {% include footer.html %}
 </body>
-<script>
-  var navItems = document.getElementsByClassName('navbar-item');
-  var heroes = document.getElementsByClassName('hero');
-  const viewOffset = 200; 
-
-  window.addEventListener("scroll", function (event) {
-    var scroll = this.scrollY;
-    var position = window.pageYOffset;
-
-    for (var i = 0; i < navItems.length; i++) {
-      navItems[i].classList.remove('is-active');
-    }
-
-    for (var i = 0; i < heroes.length; i++) {
-        var sectionTop = heroes[i].offsetTop-viewOffset;
-        var sectionBottom = heroes[i].offsetTop + heroes[i].offsetHeight-viewOffset;
-
-        if (scroll >= sectionTop && scroll < sectionBottom) {
-          navItems[i+1].classList.add('is-active');
-      }
-    }
-  });
-</script>
-
 </html>

@@ -1,46 +1,44 @@
-<!-- Include Meta Tags Here -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
-<meta content='#000000' name='theme-color'/>
-<meta name="keywords" content="{{site.site-keywords}}">
-<title>{{site.title}}{% if page.title %} | {{page.title}}{% endif %}</title>
-
-<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-<meta name="og:title" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
-<meta name="og:description" content="{% unless page.layout == 'post' %}{{site.description}}{% else %}{{page.description}}{% endunless %}">
-<meta name="og:image" content="{% unless page.layout == 'post' %}{{site.site-image}}{% else %}{{page.post-image}}{% endunless %}">
-<meta name="og:image:alt" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
-<meta name="og:url" content="{{site.url}}{{site.baseurl}}{{page.url}}">
-<meta name="article:author" content="https://www.facebook.com/{{site.facebook_username}}">
-<meta name="og:site_name" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
-<meta name="og:type" content="website">
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
-<meta name="twitter:description" content="{% unless page.layout == 'post' %}{{site.description}}{% else %}{{page.description}}{% endunless %}">
-<meta name="twitter:site" content="@{{site.twitter_username}}">
-<meta name="twitter:creator" content="@{{site.twitter_username}}">
-<meta name="twitter:image:src" content="{% unless page.layout == 'post' %}{{site.site-image}}{% else %}{{page.post-image}}{% endunless %}">
-<!-- Search Engine -->
-<meta name="description" content="{% unless page.layout == 'post' %}{{site.description}}{% else %}{{page.description}}{% endunless %}">
-<meta name="image" content="{% unless page.layout == 'post' %}{{site.site-image}}{% else %}{{page.post-image}}{% endunless %}">
-<!-- Schema.org for Google -->
-<meta itemprop="name" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
-<meta name="author" content="{{site.author-name}}"/>
-<meta itemprop="description" content="{% unless page.layout == 'post' %}{{site.description}}{% else %}{{page.description}}{% endunless %}">
-<meta itemprop="image" content="{% unless page.layout == 'post' %}{{site.site-image}}{% else %}{{page.post-image}}{% endunless %}">
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{site.google-analytics}}"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', '{{site.google-analytics}}');
+{% capture meta_title %}{% if page.title and page.title != 'Home' %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | Network Security & Systems{% endif %}{% endcapture %}
+{% assign meta_description = page.description | default: site.description %}
+{% assign meta_image = page.image | default: site.social_image | absolute_url %}
+{% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
+<title>{{ meta_title | strip | escape }}</title>
+<meta name="description" content="{{ meta_description | strip | escape }}">
+<meta name="author" content="{{ site.author.name | escape }}">
+<link rel="canonical" href="{{ canonical_url }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:title" content="{{ meta_title | strip | escape }}">
+<meta property="og:description" content="{{ meta_description | strip | escape }}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:image" content="{{ meta_image }}">
+<meta property="og:image:alt" content="Tran Quoc Dang — network security and systems portfolio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ meta_title | strip | escape }}">
+<meta name="twitter:description" content="{{ meta_description | strip | escape }}">
+<meta name="twitter:image" content="{{ meta_image }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if page.url == '/' %}ProfilePage{% else %}WebPage{% endif %}",
+  "name": {{ meta_title | strip | jsonify }},
+  "description": {{ meta_description | strip | jsonify }},
+  "url": {{ canonical_url | jsonify }},
+  "mainEntity": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "sameAs": [
+      "https://github.com/{{ site.github_username }}",
+      "https://www.linkedin.com/in/{{ site.linkedin_username }}/"
+    ],
+    "knowsAbout": [
+      "Network measurement",
+      "Packet analysis",
+      "Network intrusion detection",
+      "Linux systems programming",
+      "Machine learning for network security"
+    ]
+  }
+}
 </script>

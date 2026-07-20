@@ -1,0 +1,17 @@
+* text=auto
+
+.gitattributes text eol=lf
+Gemfile text eol=lf
+robots.txt text eol=lf
+
+*.html text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.scss text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.svg text eol=lf
+
+*.jpg binary
+*.jpeg binary
+*.png binary

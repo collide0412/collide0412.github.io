@@ -12,7 +12,6 @@ jobs:
 
     permissions:
       contents: write
-      id-token: write
 
     steps:
     - uses: actions/checkout@v4
@@ -22,9 +21,10 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll \
         -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build"
 
     - name: Deploy to GitHub Pages
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

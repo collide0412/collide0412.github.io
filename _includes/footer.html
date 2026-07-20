@@ -1,57 +1,31 @@
-<footer id="footer" style="background-color: var(--bg-color); border-top: 1px solid var(--border); padding: 4rem 0 2rem;">
-    <div class="container">
-        <div class="columns is-multiline is-justify-content-space-between">
-            <!-- Brand / About Section -->
-            <div class="column is-4-desktop is-12-tablet" style="margin-bottom: 2rem;">
-                <h3 class="title is-4" style="color: var(--text-color); font-weight: 700; margin-bottom: 1rem;">{{site.author-name}}</h3>
-                <p class="has-text-grey" style="line-height: 1.6;">
-                    Researcher & MSc Student specialized in Information and Communication Engineering. Exploring the intersections of Data Engineering and advanced networking.
-                </p>
-                <div style="margin-top: 1.5rem;">
-                    {% if site.github_username %}
-                    <a href="https://github.com/{{site.github_username}}" class="icon is-medium has-text-grey" target="_blank" style="margin-right: 10px; transition: color 0.2s;">
-                        <i class="fab fa-github fa-lg"></i>
-                    </a>
-                    {% endif %}
-                    {% if site.linkedin_username %}
-                    <a href="https://linkedin.com/in/{{site.linkedin_username}}" class="icon is-medium has-text-grey" target="_blank" style="transition: color 0.2s;">
-                        <i class="fab fa-linkedin fa-lg"></i>
-                    </a>
-                    {% endif %}
-                </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="column is-3-desktop is-6-tablet" style="margin-bottom: 2rem;">
-                <h4 class="title is-5" style="color: var(--text-color); font-weight: 600; margin-bottom: 1rem;">Quick Links</h4>
-                <ul style="list-style: none; margin: 0; padding: 0;">
-                    <li style="margin-bottom: 0.5rem;"><a href="{{site.baseurl}}/" class="has-text-grey">Home</a></li>
-                    <li style="margin-bottom: 0.5rem;"><a href="{{site.baseurl}}/portfolio" class="has-text-grey">Portfolio & CV</a></li>
-                    <li style="margin-bottom: 0.5rem;"><a href="{{site.baseurl}}/blog" class="has-text-grey">Blog Collection</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact -->
-            <div class="column is-4-desktop is-6-tablet" style="margin-bottom: 2rem;">
-                <h4 class="title is-5" style="color: var(--text-color); font-weight: 600; margin-bottom: 1rem;">Contact Me</h4>
-                <p class="has-text-grey" style="margin-bottom: 1rem;">Feel free to reach out for collaborations or just a friendly chat.</p>
-                <a href="mailto:{{ site.email }}" class="button is-primary is-outlined is-rounded">
-                    <span class="icon"><i class="fas fa-envelope"></i></span>
-                    <span>Say Hello</span>
-                </a>
-            </div>
-        </div>
-
-        <hr style="background-color: var(--border); margin: 2rem 0;">
-
-        <!-- Copyright & Back to Top -->
-        <div class="is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap">
-            <p class="has-text-grey is-size-7" style="margin-bottom: 0.5rem;">
-                &copy; {{ "now" | date: "%Y" }} Tran Quoc Dang. All rights reserved.
-            </p>
-            <a onclick="window.scroll({top: 0, behavior: 'smooth'})" class="has-text-grey is-size-7 is-clickable" style="display: flex; align-items: center; gap: 0.5rem;">
-                BACK TO TOP <i class="fas fa-arrow-up"></i>
-            </a>
-        </div>
+<footer class="site-footer">
+  <div class="site-container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-title">Tran Quoc Dang</p>
+        <p class="footer-copy">Network systems, packet analysis, and machine learning for network security.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <p class="footer-label">Explore</p>
+        <ul class="footer-links">
+          <li><a href="{{ '/#work' | relative_url }}">Selected work</a></li>
+          <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+          <li><a href="{{ '/portfolio/' | relative_url }}">Full profile</a></li>
+          <li><a href="{{ '/blog/' | relative_url }}">Writing</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-label">Connect</p>
+        <ul class="footer-links">
+          <li><a href="mailto:{{ site.email }}">Email</a></li>
+          <li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ "now" | date: "%Y" }} Tran Quoc Dang.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
 </footer>

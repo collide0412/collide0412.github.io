@@ -1,48 +1,46 @@
-﻿# .title Portfolio & Blog
+# Tran Quoc Dang — portfolio
 
-This repository hosts the source code for my personal portfolio and research blog, built with **Jekyll**, **Bulma CSS**, and **Vanilla JavaScript**.
+Personal portfolio and research profile for network systems, network security, packet analysis, and applied machine learning.
 
-## Features
+## Stack
 
-- **Dark Mode Support**: Seamless toggle between light and dark themes using CSS variables and local storage. State-of-the-art FOUC (Flash of Unstyled Content) prevention.
-- **Mobile-First Design**: Completely responsive grid powered by Bulma.
-- **Live Search**: Client-side instant JSON-based indexing using \simple-jekyll-search\.
-- **Data-Driven Components**: Auto-generated projects, blogs, research pages rendered from \_data/*.yml\, keeping code clean.
-- **SEO Optimized**: Fully integrates \jekyll-seo-tag\, \jekyll-sitemap\, and properly structured HTML5 headings.
+- Jekyll and Liquid for static generation
+- Bulma 0.9.4 plus custom Sass
+- Vanilla JavaScript for the mobile menu and theme preference
+- GitHub Actions and GitHub Pages for deployment
 
-## Local Development
+The site deliberately stays serverless: contact uses direct email and professional-profile links, and recurring project content lives in `_data/projects.yml`.
 
-If you'd like to run it locally:
+## Local development
 
-1.  **Clone the repository**:
-    \\\ash
-    git clone https://github.com/collide0412/collide0412.github.io.git
-    cd collide0412.github.io
-    \\\
+Ruby and Bundler are required.
 
-2.  **Install dependencies**:
-    Ensure you have Ruby and Bundler installed.
-    \\\ash
-    bundle install
-    \\\
+```bash
+bundle install
+bundle exec jekyll serve
+```
 
-3.  **Run the Jekyll server**:
-    \\\ash
-    bundle exec jekyll serve
-    \\\
+Open <http://127.0.0.1:4000/>.
 
-4.  Open \http://localhost:4000\ in your browser.
+Create a production build with:
 
-## Removal of "Forked from" (If applicable)
+```bash
+JEKYLL_ENV=production bundle exec jekyll build
+```
 
-If you've cloned this from another template and wish to detach the fork network on GitHub to make it a standalone repository:
-1. Create a new empty repository on your GitHub account.
-2. In your terminal, swap the Git origin:
-   \git remote set-url origin https://github.com/USERNAME/NEW-REPO.git\
-3. Push to the new repository:
-   \git push -u origin main\
-(Or request GitHub Support to detach the fork manually).
+## Content map
+
+- `index.md`: homepage overview
+- `research.md`: research directions and earlier work
+- `_layouts/portfolio.html`: detailed education, experience, skills, and project profile
+- `_data/projects.yml`: structured project and research entries
+- `_posts/`: writing
+- `_sass/main.scss`: design system and responsive styles
+
+## Deployment
+
+Pushes to `master` trigger `.github/workflows/jekyll.yml`. The workflow builds the static site and publishes `_site` to the `gh-pages` branch.
 
 ## License
 
-This project is open-sourced under the [MIT License](LICENSE).
+See [LICENSE](LICENSE) for the repository's GPL-2.0 terms.

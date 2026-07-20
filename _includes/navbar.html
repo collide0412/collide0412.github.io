@@ -1,48 +1,28 @@
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="{% if page.layout == 'home' %}{{site.baseurl}}/#{% else %}{{site.baseurl}}/{% endif %}">
-                <span class="has-text-primary">></span>_ {{site.title}}
-            </a>
-            <div class="navbar-burger" data-target="navbar-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+<nav class="site-nav" aria-label="Primary navigation">
+  <div class="site-container nav-inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Tran Quoc Dang, home">
+      <span class="brand-mark" aria-hidden="true">TQD/</span>
+      <span class="brand-name">Tran Quoc Dang</span>
+    </a>
 
-        <div class="navbar-menu" id="navbar-menu" style="transition: background 0.3s ease;">
-            <div class="navbar-end">
-                <a class="navbar-item" href="{{site.baseurl}}/#about">ABOUT ME</a>
-                <a class="navbar-item" href="{{site.baseurl}}/portfolio">PORTFOLIO</a>
-                <a class="navbar-item" href="{{site.baseurl}}/research">RESEARCH</a>
-                <a class="navbar-item" href="{{site.baseurl}}/blog">BLOG</a>
-                <a class="navbar-item" href="{{site.baseurl}}/#contact">CONTACT</a>
-                
-                <!-- Dark Mode Toggle Button -->
-                <div class="navbar-item" style="display: flex; align-items: center; padding-left: 1.5rem;">
-                    <button id="theme-toggle" class="button is-ghost is-rounded" style="border: 1px solid var(--border); color: var(--text-main); box-shadow: none;" aria-label="Toggle Dark Mode">
-                        <i class="fas fa-moon" id="theme-icon"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+    <button class="nav-toggle" type="button" aria-controls="nav-menu" aria-expanded="false">
+      <span class="sr-only">Open navigation</span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+
+    <div class="nav-menu" id="nav-menu">
+      <a href="{{ '/#work' | relative_url }}">Work</a>
+      <a href="{{ '/research/' | relative_url }}"{% if page.url == '/research/' %} aria-current="page"{% endif %}>Research</a>
+      <a href="{{ '/#background' | relative_url }}">Background</a>
+      <a href="{{ '/portfolio/' | relative_url }}"{% if page.url == '/portfolio/' %} aria-current="page"{% endif %}>Profile</a>
+      <a href="{{ '/#contact' | relative_url }}">Contact</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub <span aria-hidden="true">↗</span></a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+        <span class="theme-symbol" aria-hidden="true">◐</span>
+        <span class="theme-label">Dark theme</span>
+      </button>
     </div>
+  </div>
 </nav>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"), 0);
-        if ($navbarBurgers.length > 0) {
-            $navbarBurgers.forEach(function ($el) {
-                $el.addEventListener("click", function () {
-                    var target = $el.dataset.target;
-                    var $target = document.getElementById(target);
-                    $el.classList.toggle("is-active");
-                    $target.classList.toggle("is-active");
-                });
-            });
-        }
-    });
-</script>
-

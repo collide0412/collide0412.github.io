@@ -1,32 +1,77 @@
-﻿- name: People Search Engine
-  image: https://cdn.pixabay.com/photo/2021/08/19/16/18/search-6551387_960_720.jpg
-  link: https://github.com/collide0412/people-search-engine
-  description: Developed and deployed the backend for a people search engine, focusing on creating a secure and scalable RESTful API using Django REST Framework. Implemented user management features, authentication, and various search functionalities to retrieve information from a PostgreSQL database. Utilized Swagger to streamline API documentation and testing, ensuring effective collaboration with the frontend team. Implemented automated tool for scraping and gathering data from various sources automatically.
+- title: Cross-dataset network intrusion detection
+  category: Network security
+  status: Ongoing research
+  summary: Examines how an XGBoost-based DDoS detector transfers between CIC-IDS-2017 and CIC-IDS-2018.
+  problem: Models trained on one intrusion-detection dataset may not transfer cleanly to traffic collected in another environment.
+  approach: Evaluate out-of-distribution behavior, concept drift, false-positive-aware thresholds, and reduced feature sets across the two datasets.
+  limitations: This is ongoing work; no publication status or final performance result is claimed here.
+  technologies:
+    - Python
+    - XGBoost
+    - CIC-IDS-2017
+    - CIC-IDS-2018
+  featured: true
 
-- name: Data Cleaning for IScholar
-  image: https://cdn.pixabay.com/photo/2020/06/17/12/41/computer-5306795_960_720.jpg
-  link: 
-  description: Applied data cleaning skills to improve the organization's database, removing obsolete content and ensuring data accuracy. Led the communication branch, overseeing the creation and dissemination of promotional materials, social media content, and event announcements.
+- title: Protocol-aware PCAP segmentation
+  category: Packet processing
+  status: Research tooling
+  summary: Segments packet captures while tracking byte-offset boundaries for downstream dataset and flow-feature work.
+  problem: Arbitrary capture splits can lose the protocol context needed by later processing stages.
+  approach: Track offsets and protocol boundaries while preparing capture segments for network-flow feature extraction.
+  limitations: The validation scope and public code availability are not stated.
+  technologies:
+    - PCAP
+    - Packet processing
+    - Network flow extraction
+  featured: true
 
-- name: IoT Backend Development
-  image: https://cdn.pixabay.com/photo/2017/12/09/08/18/iot-300x200.jpg
-  link: 
-  description: Trained other members in IoT basic skills and developed the backend to integrate with middleware. Focused on building scalable solutions and ensuring seamless communication between IoT devices and the server.
+- title: Packet-capture library benchmarking
+  category: Network systems
+  status: Engineering experiment
+  summary: Compares packet-processing libraries through C, C++, and Python implementations.
+  problem: Packet-capture libraries expose different APIs and execution trade-offs that require a consistent comparison.
+  approach: Exercise libpcap, libtrace, Scapy, PcapPlusPlus, and PF_RING while measuring runtime and packet-processing throughput.
+  limitations: No benchmark figures or preferred-library conclusion are claimed here.
+  technologies:
+    - libpcap
+    - libtrace
+    - Scapy
+    - PcapPlusPlus
+    - PF_RING
+  featured: true
 
-- name: Data Analysis for ISTECH
-  image: https://cdn.pixabay.com/photo/2018/02/13/10/36/analytics-3141043_960_720.jpg
-  link: 
-  description: Analyzed data and created predictive models for club projects. Participated in data science hackathons hosted by Kaggle, Shopee, etc., and trained 15+ members in data science and data engineering concepts and tools.
+- title: TCP and UDP throughput measurement tools
+  category: Network measurement
+  status: Research tooling
+  summary: Linux socket tools for studying throughput, latency, jitter, packet loss, and retransmission behavior.
+  problem: TCP and UDP experiments need protocol-aware measurements beyond aggregate transfer speed.
+  approach: Combine TCP_INFO instrumentation with UDP sequence tracking, acknowledgements, and checksum verification in C and C++ tools.
+  limitations: Hardware setup, experiment configuration, and measured results are not published on this site.
+  technologies:
+    - C
+    - C++
+    - Linux
+    - TCP_INFO
+    - UDP
+  featured: true
 
-- name: Automation Tools for Viettel IDC
-  image: https://cdn.pixabay.com/photo/2018/03/26/17/50/workspace-3265922_960_720.jpg
-  link: 
-  description: Utilized automation tools written in Python to fetch and initialize data. Cleaned and filtered data for integration into the data warehouse, ensuring data quality and accuracy. Maintained automation tool workflows, contributing to the smooth execution of the project.
+- title: People search engine
+  category: Web engineering
+  status: Earlier engineering project
+  summary: Backend work for a people-search application, including authentication, search endpoints, API documentation, and data-collection automation.
+  technologies:
+    - Python
+    - Django REST Framework
+    - PostgreSQL
+    - Swagger
+  featured: false
 
-
-- name: Audiobook Generator
-  role: Developer
-  date: Jun 2024 - Sep 2024
-  image: https://cdn.pixabay.com/photo/2015/05/15/14/56/audio-768565_960_720.jpg
-  link: 
-  description: Created an audiobook generator using Google Cloud Text-to-Speech. Implemented both a user interface (UI) using Flask and a command-line interface (CLI) for system interaction. Developed commands for generating audio from PDFs and HTML URLs, and for checking the status of generated audio operations.
+- title: Audiobook generator
+  category: Applied software
+  status: Earlier engineering project
+  summary: A Flask interface and command-line workflow for generating audio from PDF documents and HTML pages with Google Cloud Text-to-Speech.
+  technologies:
+    - Python
+    - Flask
+    - Google Cloud Text-to-Speech
+  featured: false

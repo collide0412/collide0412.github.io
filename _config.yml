@@ -1,98 +1,48 @@
-﻿# WhatATheme
-markdown: kramdown
+# Site identity
+title: Tran Quoc Dang
+description: Master's student and engineer working on network measurement, packet analysis, and machine-learning-based intrusion detection.
+url: https://collide0412.github.io
+baseurl: ""
+lang: en
+timezone: Asia/Seoul
 
-# URL of the Site
-url: 'https://collide0412.github.io'
-# Base URL of the Site (leave blank since this is your user site)
-baseurl: ''
-
-# Title of the Site
-title: Tran Quoc Dang's Portfolio
-# Description of the Site
-description: A portfolio showcasing my education, work experience, projects, and skills
-# URL of Image of the Site
-site-image: /assets/images/meta.jpg
-# Keywords of the Site
-site-keywords: Portfolio, Tran Quoc Dang, Information and Communication Engineering, Research, Projects
-# URL for the Image of custom Favicon
-favicon-url: 
-
-# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: https://collide0412.github.io/assets/images/homepage_image.jpeg 
-# Social Media and Contact
-# If you don't want to use any icon, you can leave them blank.
+# Public profile information
+author:
+  name: Tran Quoc Dang
+  url: https://github.com/collide0412
 email: collide0412@gmail.com
-facebook_username: Collideee
-instagram_username: cuoc_dangg
-linkedin_username: collide0412
 github_username: collide0412
-
-# Name of the Author
+linkedin_username: collide0412
 author-name: Tran Quoc Dang
-# URL for the Image of the Author
-author-image: https://collide0412.github.io/assets/images/profile.jpg
-# 60 Words About the Author
-author-about: Researcher and MSc student in Information and Communication Engineering at Chungbuk National University, South Korea. Passionate about research and development in information and communication technologies.
-# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/collide0412
+social_image: /assets/images/social-card.png
 
-# SASS
+# Build
+markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
-
-# Build settings
-
-# Mới được tối ưu hóa (SEO, Build, Cấu trúc)
 plugins:
-  - jekyll-admin
-  - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
 
-paginate: 6
-paginate_path: "/blog/page:num/"
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
 
 exclude:
   - Gemfile
   - Gemfile.lock
-  - vendor
   - node_modules
-  - scripts/
+  - scripts
+  - vendor
 
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-
-# Compress
 compress_html:
   clippings: all
-
-# Defaults
-defaults:
-  -
-    scope:
-      type: 'pages'
-    values:
-      layout: page
-
-# Exclude
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-

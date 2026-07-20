@@ -1,105 +1,188 @@
 ---
 layout: home
 title: Home
+description: Tran Quoc Dang is a master's student and engineer working on network measurement, packet analysis, and machine-learning-based intrusion detection.
 permalink: /
+image: /assets/images/social-card.png
 ---
 
-<section class="section is-medium hero" style="background: linear-gradient(135deg, var(--bg-color) 0%, var(--primary-light) 100%); border-radius: 0 0 40px 40px; margin-top: -80px; padding-top: 140px; padding-bottom: 8rem;">
-  <div class="container has-text-centered">
-    <div class="is-inline-block" style="background-color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; color: var(--primary); margin-bottom: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid var(--border);">
-      ✨ Welcome to my digital space
+<section class="hero-section" aria-labelledby="hero-title">
+  <div class="site-container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Network systems · Security · Applied ML</p>
+      <h1 id="hero-title">Tran Quoc Dang</h1>
+      <p class="hero-role">Master's student in Information and Communication Engineering</p>
+      <p class="hero-summary">I work on network measurement, packet analysis, and machine-learning-based intrusion detection. My approach combines systems implementation with reproducible empirical evaluation.</p>
+      <div class="hero-actions">
+        <a class="button-link button-link-primary" href="#work">View selected work</a>
+        <a class="button-link button-link-secondary" href="{{ '/research/' | relative_url }}">Explore research</a>
+      </div>
+      <ul class="profile-links" aria-label="Professional links">
+        <li><a href="https://github.com/{{ site.github_username }}">GitHub <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">LinkedIn <span aria-hidden="true">↗</span></a></li>
+        <li><a href="mailto:{{ site.email }}">Email</a></li>
+      </ul>
     </div>
-    <h1 class="title is-1" style="font-weight: 800; letter-spacing: -1px; margin-bottom: 1.5rem; font-size: 4rem; line-height: 1.2;">
-      Hi, I'm <span class="has-text-primary">Tran Quoc Dang</span>
-    </h1>
-    <h2 class="subtitle is-3 has-text-grey" style="font-weight: 300; max-width: 700px; margin: 0 auto; line-height: 1.6;">
-      <b class="has-text-dark">Researcher & MSc Student</b> specialized in Information and Communication Engineering, based in South Korea.
-    </h2>
-    <div style="margin-top: 2.5rem; display: flex; justify-content: center; gap: 1rem;">
-        <a href="{{site.baseurl}}/portfolio" class="button is-primary is-rounded is-medium" style="box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);">View My Portfolio</a>
-        <a href="#about" class="button is-white is-outlined is-rounded is-medium" style="border: 2px solid var(--border);">More About Me</a>
-    </div>
-  </div>
-</section>
 
-<section id="about" class="section" style="padding-top: 5rem; padding-bottom: 5rem;">
-  <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-6">
-        <h2 class="title is-2">A bit about myself.</h2>
-        <p class="content is-medium">
-          I am deeply passionate about R&D in contemporary communication technologies, currently contributing to a prominent lab at <strong>Chungbuk National University</strong>. Blending academia with practical problem-solving is what I do best.
-        </p>
-        <p class="content">
-          Beyond research, I actively build robust systems, develop personal projects spanning different tech stacks, organize community tech events, and share my findings through writing.
-        </p>
-        <br/>
-        <div class="tags are-medium">
-          <span class="tag" style="background-color: var(--primary-light);"><a href="{{site.baseurl}}/portfolio" style="color: var(--primary); font-weight: 600;">Education</a></span>
-          <span class="tag" style="background-color: var(--primary-light);"><a href="{{site.baseurl}}/portfolio" style="color: var(--primary); font-weight: 600;">Experience</a></span>
-          <span class="tag" style="background-color: var(--primary-light);"><a href="{{site.baseurl}}/portfolio" style="color: var(--primary); font-weight: 600;">Skills</a></span>
-          <span class="tag" style="background-color: var(--primary-light);"><a href="{{site.baseurl}}/portfolio" style="color: var(--primary); font-weight: 600;">Awards</a></span>
-        </div>
-      </div>
-      <div class="column is-5 is-offset-1">
-        <figure class="image is-square" style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-          <img src="{{site.author-image}}" alt="Tran Quoc Dang" style="object-fit: cover;">
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-
----
-
-<section class="section" style="padding-top: 5rem; padding-bottom: 5rem; background-color: var(--bg-color);">
-  <div class="container">
-    <div class="is-flex is-justify-content-space-between is-align-items-flex-end" style="margin-bottom: 3rem;">
-      <div>
-        <h2 class="title is-2" style="font-weight: 700;">Latest Insights</h2>
-        <p class="subtitle is-5 has-text-grey" style="margin-top: 0.5rem;">Thoughts on technology, research, and academia.</p>
-      </div>
-      <div>
-        <a href="{{site.baseurl}}/blog/" class="button is-primary is-outlined is-rounded">See All Posts &rarr;</a>
-      </div>
-    </div>
-    
-    <div class="columns is-multiline">
-      {% for post in site.posts limit:3 %}
-      <div class="column is-4">
-        <a href="{{ post.url | relative_url }}" style="display: block; height: 100%;">
-          <div class="card" style="height: 100%; display: flex; flex-direction: column; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s; cursor: pointer;">
-            <div class="card-content" style="flex-grow: 1; padding: 2rem;">
-              <p class="is-size-7 has-text-primary has-text-weight-bold is-uppercase" style="margin-bottom: 0.75rem; letter-spacing: 1px;">{{ post.date | date: "%B %d, %Y" }}</p>
-              <h3 class="title is-4 has-text-dark" style="line-height: 1.4; margin-bottom: 1rem;">{{ post.title }}</h3>
-              <div class="content has-text-grey">
-                {{ post.content | strip_html | truncatewords: 22 }}
-              </div>
-            </div>
-            <div style="padding: 0 2rem 2rem; margin-top: auto;">
-              <span class="has-text-primary has-text-weight-semibold" style="display: inline-flex; align-items: center; gap: 0.5rem;">Read More <i class="fas fa-arrow-right is-size-7"></i></span>
-            </div>
+    <aside class="focus-panel" aria-labelledby="focus-title">
+      <p class="panel-label" id="focus-title">Current focus</p>
+      <ul class="focus-list">
+        <li>
+          <span class="focus-index" aria-hidden="true">01</span>
+          <div>
+            <strong>Cross-dataset intrusion detection</strong>
+            <p>Evaluating how models behave across network environments and dataset shifts.</p>
           </div>
-        </a>
+        </li>
+        <li>
+          <span class="focus-index" aria-hidden="true">02</span>
+          <div>
+            <strong>Packet and traffic analysis</strong>
+            <p>Building research tooling around packet captures, flow boundaries, and dataset quality.</p>
+          </div>
+        </li>
+        <li>
+          <span class="focus-index" aria-hidden="true">03</span>
+          <div>
+            <strong>Network measurement</strong>
+            <p>Studying throughput, latency, jitter, packet loss, and transport behavior on Linux.</p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="section-block" id="work" aria-labelledby="work-title">
+  <div class="site-container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h2 id="work-title">Engineering and research in context</h2>
       </div>
+      <p>Work is labeled by status; no unpublished result is presented as a completed finding.</p>
+    </div>
+
+    {% assign featured_projects = site.data.projects | where: "featured", true %}
+    <div class="project-grid">
+      {% for project in featured_projects limit:4 %}
+      <article class="project-card">
+        <div class="project-meta">
+          <span>{{ project.category }}</span>
+          <span>{{ project.status }}</span>
+        </div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.summary }}</p>
+        {% if project.technologies %}
+        <ul class="tag-list" aria-label="Technologies used">
+          {% for technology in project.technologies limit:5 %}
+          <li>{{ technology }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if project.repository_url %}
+        <a class="text-link" href="{{ project.repository_url }}">View repository <span aria-hidden="true">↗</span></a>
+        {% endif %}
+      </article>
       {% endfor %}
     </div>
+    <p class="section-action"><a class="text-link" href="{{ '/portfolio/' | relative_url }}">View the full technical profile →</a></p>
   </div>
 </section>
 
-<section id="contact" class="section is-medium" style="position: relative; overflow: hidden; padding: 8rem 2rem; margin-top: 2rem; border-top: 1px solid var(--border);">
-  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to right, var(--bg-color), var(--primary-light), var(--bg-color)); opacity: 0.5; z-index: -1;"></div>
-  <div class="container has-text-centered">
-    <div style="display: inline-flex; align-items: center; justify-content: center; width: 80px; height: 80px; background-color: white; border-radius: 50%; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2); margin-bottom: 2rem;">
-      <i class="fas fa-paper-plane fa-2x has-text-primary"></i>
+<section class="section-block section-tinted" id="about" aria-labelledby="about-title">
+  <div class="site-container two-column">
+    <div>
+      <p class="eyebrow">About</p>
+      <h2 id="about-title">Systems implementation meets empirical evaluation</h2>
     </div>
-    <h2 class="title is-2" style="font-weight: 800; font-size: 3rem; margin-bottom: 1rem;">Let's Collaborate</h2>
-    <p class="subtitle is-4 has-text-grey" style="max-width: 600px; margin: 0 auto 3rem; line-height: 1.6;">
-      My inbox is always open. Whether it's to discuss research ideas, talk about Data Engineering, or just to network.
-    </p>
-    <a href="mailto:{{ site.email }}" class="button is-dark is-large is-rounded" style="padding-left: 2.5rem; padding-right: 2.5rem; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
-      <span class="icon is-small"><i class="fas fa-paper-plane"></i></span>
-      <span>Say Hello</span>
-    </a>
+    <div class="prose-stack">
+      <p>I am a master's student in South Korea with an undergraduate background in Informatics and Computer Engineering. My current work connects network systems, cybersecurity, and applied machine learning.</p>
+      <p>I am interested in both building practical tools and testing them through controlled, reproducible experiments. That includes packet processing, Linux networking, data pipelines, and evaluation methods for intrusion-detection models.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-block" aria-labelledby="capabilities-title">
+  <div class="site-container">
+    <div class="section-heading compact-heading">
+      <div>
+        <p class="eyebrow">Technical capabilities</p>
+        <h2 id="capabilities-title">Tools organized by the work they support</h2>
+      </div>
+    </div>
+    <div class="capability-grid">
+      <article>
+        <h3>Programming</h3>
+        <p>C, C++, Python, SQL, shell scripting, and reproducible notebook workflows.</p>
+      </article>
+      <article>
+        <h3>Networking and systems</h3>
+        <p>TCP/IP, UDP, Linux, socket programming, packet capture, traffic analysis, and performance measurement.</p>
+      </article>
+      <article>
+        <h3>Security and machine learning</h3>
+        <p>Network intrusion detection, DDoS detection, XGBoost, feature engineering, concept drift, and out-of-distribution evaluation.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section-block section-bordered" id="background" aria-labelledby="background-title">
+  <div class="site-container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Background</p>
+        <h2 id="background-title">Research, industry, and education</h2>
+      </div>
+      <p>A concise overview; the profile page contains the supporting detail.</p>
+    </div>
+    <div class="background-grid">
+      <div>
+        <h3 class="subsection-title">Experience</h3>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="item-meta"><span>Mar 2025–present</span><span>South Korea</span></div>
+            <h4>Graduate Student Researcher</h4>
+            <p>EASW Lab, Chungbuk National University</p>
+          </li>
+          <li class="timeline-item">
+            <div class="item-meta"><span>Mar–Sep 2023</span><span>Vietnam</span></div>
+            <h4>Data Engineer Intern</h4>
+            <p>Viettel IDC</p>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h3 class="subsection-title">Education</h3>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="item-meta"><span>Mar 2025–present</span></div>
+            <h4>Master's studies, Information and Communication Engineering</h4>
+            <p>Chungbuk National University</p>
+          </li>
+          <li class="timeline-item">
+            <div class="item-meta"><span>Oct 2020–Aug 2024</span></div>
+            <h4>Bachelor's studies, Informatics and Computer Engineering</h4>
+            <p>VNU International School</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <p class="section-action"><a class="text-link" href="{{ '/portfolio/' | relative_url }}">Open full background and skills →</a></p>
+  </div>
+</section>
+
+<section class="contact-section" id="contact" aria-labelledby="contact-title">
+  <div class="site-container contact-grid">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Discuss research or engineering work</h2>
+      <p>For research collaboration, technical projects, or graduate opportunities, email is the most direct way to reach me.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="button-link button-link-primary" href="mailto:{{ site.email }}">Email Tran Quoc Dang</a>
+      <a class="text-link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">LinkedIn profile <span aria-hidden="true">↗</span></a>
+    </div>
   </div>
 </section>

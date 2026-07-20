@@ -1,15 +1,3 @@
 ---
 ---
-@import "main.scss";
-
-/* Custom tweaks to layout elements if not covered by main.scss */
-.title {
-    margin: auto 0.75rem!important;
-}
-
-#blog {
-    .container {
-        margin: 1.5rem auto;
-    }
-}
-
+@import "main";
