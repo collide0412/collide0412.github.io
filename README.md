@@ -5,7 +5,7 @@ Personal portfolio and research profile for network systems, network security, p
 ## Stack
 
 - Jekyll and Liquid for static generation
-- Bulma 0.9.4 plus custom Sass
+- Custom Sass with a small token-based design system
 - Vanilla JavaScript for the mobile menu and theme preference
 - GitHub Actions and GitHub Pages for deployment
 

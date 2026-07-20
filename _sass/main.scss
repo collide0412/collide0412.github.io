@@ -129,8 +129,11 @@ h3,
 h4,
 p,
 ul,
-ol {
-  margin-top: 0;
+ol,
+dl,
+dd,
+figure {
+  margin: 0;
 }
 
 h1,
@@ -802,6 +805,17 @@ section[id],
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.skill-group ul,
+.post-content ul,
+.post-content ol {
+  padding-left: 1.25rem;
+}
+
+.skill-group li + li,
+.post-content li + li {
+  margin-top: var(--space-1);
+}
+
 .contact-list a {
   display: inline-flex;
   min-height: 44px;
@@ -904,16 +918,35 @@ section[id],
 }
 
 @media (max-width: 900px) {
-  .nav-toggle {
-    display: block;
+  .nav-inner {
+    flex-wrap: wrap;
   }
 
   .nav-menu {
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: var(--space-2);
+  }
+
+  .no-js .theme-toggle {
+    display: none;
+  }
+
+  .js .nav-inner {
+    flex-wrap: nowrap;
+  }
+
+  .js .nav-toggle {
+    display: block;
+  }
+
+  .js .nav-menu {
     position: absolute;
     top: calc(100% + 1px);
     right: 0;
     left: 0;
     display: none;
+    width: auto;
     padding: var(--space-2);
     border: 1px solid var(--border);
     border-top: 0;
@@ -922,12 +955,12 @@ section[id],
     box-shadow: var(--shadow);
   }
 
-  .nav-menu.is-open {
+  .js .nav-menu.is-open {
     display: grid;
   }
 
-  .nav-menu > a,
-  .theme-toggle {
+  .js .nav-menu > a,
+  .js .theme-toggle {
     width: 100%;
     justify-content: flex-start;
     padding-inline: var(--space-3);

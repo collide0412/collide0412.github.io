@@ -5,10 +5,10 @@
   <meta name="theme-color" content="#f5f7f8" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0d171b" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
     try {
       const savedTheme = localStorage.getItem('theme');
       const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
