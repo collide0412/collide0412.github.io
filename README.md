@@ -39,7 +39,7 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 ## Deployment
 
-Pushes to `master` trigger `.github/workflows/jekyll.yml`. The workflow builds the static site and publishes `_site` to the `gh-pages` branch.
+GitHub Pages builds and deploys the `master` branch through its managed Pages workflow. The checked-in `.github/workflows/jekyll.yml` runs the same official Jekyll builder as a read-only check on pushes and pull requests; it does not deploy or write to another branch.
 
 ## License
 

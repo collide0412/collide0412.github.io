@@ -914,6 +914,9 @@ section[id],
 }
 
 .footer-bottom a {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
   color: var(--text-muted);
 }
 
