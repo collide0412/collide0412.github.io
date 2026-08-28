@@ -75,3 +75,23 @@
     - Flask
     - Google Cloud Text-to-Speech
   featured: false
+
+- title: Farmera web
+  category: Startup demo
+  status: Job Fair 2026 encouragement award
+  summary: Web demo for our startup project, presented at Job Fair 2026 organized by VSAK in South Korea.
+  technologies:
+    - Web development
+    - Startup project
+  live_url: /farmera-web/
+  featured: false
+
+- title: CBNU exam prep
+  category: Education tooling
+  status: Personal project
+  summary: A study website I built to prepare for exams at Chungbuk National University.
+  technologies:
+    - Web development
+    - Study tools
+  live_url: /cbnu-exam-prep/
+  featured: false
