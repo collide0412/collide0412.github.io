@@ -568,6 +568,20 @@ section[id],
   flex-direction: column;
 }
 
+.project-card-showcase {
+  border-top: 4px solid var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.project-card-showcase .button-link {
+  align-self: flex-start;
+  margin-top: var(--space-4);
+}
+
+.web-project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .project-card h2,
 .project-card h3,
 .capability-grid h3,

@@ -16,6 +16,7 @@ image: /assets/images/social-card.png
       <div class="hero-actions">
         <a class="button-link button-link-primary" href="#work">View selected work</a>
         <a class="button-link button-link-secondary" href="{{ '/research/' | relative_url }}">Explore research</a>
+        <a class="button-link button-link-secondary" href="#web-projects">Web projects</a>
       </div>
       <ul class="profile-links" aria-label="Professional links">
         <li><a href="https://github.com/{{ site.github_username }}">GitHub <span aria-hidden="true">↗</span></a></li>
@@ -50,6 +51,40 @@ image: /assets/images/social-card.png
         </li>
       </ul>
     </aside>
+  </div>
+</section>
+
+<section class="section-block section-tinted web-projects-section" id="web-projects" aria-labelledby="web-projects-title">
+  <div class="site-container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Built for the web</p>
+        <h2 id="web-projects-title">Projects you can try</h2>
+      </div>
+      <p>Two practical web projects: a startup demo recognized at Job Fair 2026 and a study tool for CBNU exams.</p>
+    </div>
+
+    {% assign web_projects = site.data.projects | where_exp: "project", "project.live_url" %}
+    <div class="project-grid web-project-grid">
+      {% for project in web_projects %}
+      <article class="project-card project-card-showcase">
+        <div class="project-meta">
+          <span>{{ project.category }}</span>
+          <span>{{ project.status }}</span>
+        </div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.summary }}</p>
+        {% if project.technologies %}
+        <ul class="tag-list" aria-label="Technologies used">
+          {% for technology in project.technologies %}
+          <li>{{ technology }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        <a class="button-link button-link-primary" href="{{ project.live_url | relative_url }}">Open {{ project.title }} <span aria-hidden="true">↗</span></a>
+      </article>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
