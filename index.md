@@ -83,6 +83,9 @@ image: /assets/images/social-card.png
         {% if project.repository_url %}
         <a class="text-link" href="{{ project.repository_url }}">View repository <span aria-hidden="true">↗</span></a>
         {% endif %}
+        {% if project.live_url %}
+        <a class="text-link" href="{{ project.live_url | relative_url }}">Open live site <span aria-hidden="true">↗</span></a>
+        {% endif %}
       </article>
       {% endfor %}
     </div>
