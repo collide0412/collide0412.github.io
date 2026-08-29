@@ -58,10 +58,10 @@ image: /assets/images/social-card.png
   <div class="site-container">
     <div class="section-heading">
       <div>
-        <p class="eyebrow">Built for the web</p>
-        <h2 id="web-projects-title">Projects you can try</h2>
+        <p class="eyebrow">Web applications</p>
+        <h2 id="web-projects-title">Featured projects</h2>
       </div>
-      <p>Two practical web projects: a startup demo recognized at Job Fair 2026 and a study tool for CBNU exams.</p>
+      <p>A startup demo that earned an encouragement award at Job Fair 2026, and a learning platform for CBNU exams.</p>
     </div>
 
     {% assign web_projects = site.data.projects | where_exp: "project", "project.live_url" %}
@@ -81,7 +81,7 @@ image: /assets/images/social-card.png
           {% endfor %}
         </ul>
         {% endif %}
-        <a class="button-link button-link-primary" href="{{ project.live_url | relative_url }}">Open {{ project.title }} <span aria-hidden="true">↗</span></a>
+        <a class="button-link button-link-primary" href="{{ project.live_url | relative_url }}">Visit {{ project.title }} <span aria-hidden="true">↗</span></a>
       </article>
       {% endfor %}
     </div>
