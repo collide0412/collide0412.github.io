@@ -4,11 +4,11 @@ layout: default
 <article class="post-shell">
   <div class="site-container">
     <header class="post-header">
-      <p class="eyebrow">Writing</p>
+      <p class="eyebrow">{{ page.categories | first | default: 'Writing' }}</p>
       <h1>{{ page.title }}</h1>
       <p class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-        <span aria-hidden="true"> · </span>{{ site.author.name }}
+        <span aria-hidden="true"> · </span>{{ page.reading_time | default: 'Reading' }}
       </p>
       {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
     </header>
@@ -20,7 +20,7 @@ layout: default
     </figure>
     {% endif %}
 
-    <div class="post-content">
+    <div class="post-content{% if page.lang == 'vi' %} post-content--editorial{% endif %}">
       {{ content }}
     </div>
     <p class="section-action"><a class="text-link" href="{{ '/blog/' | relative_url }}">← Back to writing</a></p>

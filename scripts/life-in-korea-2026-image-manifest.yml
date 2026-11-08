@@ -1,0 +1,10 @@
+# Development-only review record. The requested anh_han/ source collection was
+# not present in the workspace at implementation time, so no photographs were
+# selected or copied into the public site.
+status: pending-source-review
+source_directory: anh_han/
+selected_images: []
+notes:
+  - Inspect every supplied source image before publication.
+  - Confirm publication permission for recognizable people.
+  - Copy only approved, optimized images to assets/images/blog/life-in-korea-2026/.

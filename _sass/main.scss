@@ -866,6 +866,20 @@ section[id],
   font-size: var(--text-lg);
 }
 
+.post-content--editorial {
+  max-width: 46rem;
+}
+
+.post-content--editorial h2 {
+  max-width: 24ch;
+  margin-bottom: var(--space-3);
+  font-size: clamp(1.7rem, 3.4vw, 2.45rem);
+}
+
+.post-content--editorial p {
+  max-width: 68ch;
+}
+
 .post-content h2,
 .post-content h3 {
   margin-top: var(--space-6);

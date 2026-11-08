@@ -12,7 +12,8 @@
 <meta property="og:description" content="{{ meta_description | strip | escape }}">
 <meta property="og:url" content="{{ canonical_url }}">
 <meta property="og:image" content="{{ meta_image }}">
-<meta property="og:image:alt" content="Tran Quoc Dang — network security and systems portfolio">
+<meta property="og:image:alt" content="{{ page.image_alt | default: 'Tran Quoc Dang — network security and systems portfolio' | escape }}">
+{% if page.layout == 'post' %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endif %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ meta_title | strip | escape }}">
 <meta name="twitter:description" content="{{ meta_description | strip | escape }}">
@@ -20,7 +21,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "{% if page.url == '/' %}ProfilePage{% else %}WebPage{% endif %}",
+  "@type": "{% if page.layout == 'post' %}BlogPosting{% elsif page.url == '/' %}ProfilePage{% else %}WebPage{% endif %}",
   "name": {{ meta_title | strip | jsonify }},
   "description": {{ meta_description | strip | jsonify }},
   "url": {{ canonical_url | jsonify }},
@@ -40,5 +41,13 @@
       "Machine learning for network security"
     ]
   }
+  {% if page.layout == 'post' %},
+  "headline": {{ page.title | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }}
+  }
+  {% endif %}
 }
 </script>
