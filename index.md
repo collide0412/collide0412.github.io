@@ -61,7 +61,7 @@ image: /assets/images/social-card.png
         <p class="eyebrow">Web applications</p>
         <h2 id="web-projects-title">Featured projects</h2>
       </div>
-      <p>A startup demo that earned an encouragement award at Job Fair 2026, and a learning platform for CBNU exams.</p>
+      <p>A startup demo that earned an encouragement award at Job Fair 2026.</p>
     </div>
 
     {% assign web_projects = site.data.projects | where_exp: "project", "project.live_url" %}

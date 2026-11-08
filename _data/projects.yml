@@ -85,13 +85,3 @@
     - Startup project
   live_url: /farmera-web/
   featured: false
-
-- title: CBNU exam prep
-  category: Education tooling
-  status: Personal project
-  summary: A study website I built to prepare for exams at Chungbuk National University.
-  technologies:
-    - Web development
-    - Study tools
-  live_url: /cbnu-exam-prep/
-  featured: false
