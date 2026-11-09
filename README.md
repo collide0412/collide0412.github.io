@@ -37,6 +37,12 @@ JEKYLL_ENV=production bundle exec jekyll build
 - `_posts/`: writing
 - `_sass/main.scss`: design system and responsive styles
 
+## Cloudflare Web Analytics
+
+This site is deployed on GitHub Pages and is not proxied through Cloudflare, so Web Analytics uses Cloudflare's official JavaScript beacon. The site has been registered in Cloudflare Web Analytics and the site-specific token is configured in `_config.yml`; the beacon is enabled after this repository version is deployed.
+
+The beacon records standard page views by URL, so the article at `/blog/life-in-korea-november-2026/` is distinct from the homepage and other posts. Cloudflare Web Analytics does not provide custom reading-completion or scroll-depth events through this integration; this site does not add unsupported tracking.
+
 ## Deployment
 
 GitHub Pages builds and deploys the `master` branch through its managed Pages workflow. The checked-in `.github/workflows/jekyll.yml` runs the same official Jekyll builder as a read-only check on pushes and pull requests; it does not deploy or write to another branch.

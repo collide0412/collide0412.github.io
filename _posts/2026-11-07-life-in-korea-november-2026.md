@@ -1,6 +1,7 @@
 ---
 title: "Có những nơi, ta chỉ định đi ngang qua"
 date: 2026-11-07 09:00:00 +0900
+permalink: /blog/life-in-korea-november-2026/
 lang: vi
 description: "Những ngày bình thường ở Cheongju, những con người mình may mắn gặp được, và một quyết định mà trước đây mình chưa từng nghĩ tới."
 categories: [Personal Journal]

@@ -25,6 +25,7 @@
     </div>
     <div class="footer-bottom">
       <p>&copy; {{ "now" | date: "%Y" }} Tran Quoc Dang.</p>
+      {% if site.cloudflare_web_analytics_token != "" %}<p>Privacy-conscious analytics by Cloudflare Web Analytics.</p>{% endif %}
       <a href="#top">Back to top ↑</a>
     </div>
   </div>
